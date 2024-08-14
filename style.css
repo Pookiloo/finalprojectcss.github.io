@@ -1,0 +1,282 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+}
+
+a {
+  color: #0073e6;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: #005bb5;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Flexbox Layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  text-align: center;
+  padding: 60px 0;
+  border: 1px solid #e0e0e0;
+  background: #ffffff;
+}
+
+header h1 {
+  font-size: 2.75rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  color: #666;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+header p {
+  margin-top: 20px;
+  color: #999;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p, ul, ol {
+  margin-bottom: 20px;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+blockquote {
+  padding: 20px;
+  background-color: #e9ecef;
+  border-left: 5px solid #0073e6;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+  display: flex;
+  justify-content: center;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  color: #999;
+  border-top: 1px solid #e0e0e0;
+  background: #ffffff;
+}
+
+footer p {
+  margin-bottom: 15px;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  margin-right: 15px;
+}
+
+footer a {
+  color: #666;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #333;
+}
+
+#files .container, .page-footer .container, #styles .container, .profile .container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#files .container {
+  max-width: 960px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #0073e6;
+  color: #ffffff;
+  padding: 10px 15px;
+  z-index: 100;
+  transition: top 0.3s ease, background 0.3s ease;
+  border-radius: 4px;
+}
+
+.skip-link:hover {
+  top: 0px;
+  background: #005bb5;
+  color: #ffffff;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile h4 {
+  margin-bottom: 15px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+}
+
+.features li {
+  margin-bottom: 10px;
+}
+
+.link-allstyles, .link-guidelines, .link-downloadcss, .link-downloadhtml, .link-codepen, .link-github {
+  display: inline-flex;
+  padding: 10px 15px;
+  color: #0073e6;
+  border: 1px solid #0073e6;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  justify-content: center;
+}
+
+.link-allstyles:hover, .link-guidelines:hover, .link-downloadcss:hover, .link-downloadhtml:hover, .link-codepen:hover, .link-github:hover {
+  background-color: #0073e6;
+  color: #ffffff;
+}
+
+.link-github svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  fill: currentColor;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+
+.page-footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.page-footer li {
+  margin-right: 15px;
+}
+
+.page-footer a {
+  color: #0073e6;
+}
+
+.page-footer a:hover {
+  color: #005bb5;
+}
+
